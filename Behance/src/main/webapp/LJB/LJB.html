@@ -3,9 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript">
+function shuffleImagesWithinList() {
+	  const list = document.getElementById("randomList");
+
+	  [...list.children].forEach(item => {
+	    const images = Array.from(item.getElementsByTagName("img"));
+
+	    images.forEach(img => item.removeChild(img));
+	    shuffleArray(images);
+	    images.forEach(img => item.appendChild(img));
+	  });
+	}
+
+	function shuffleArray(array) {
+	  for (let i = array.length - 1; i > 0; i--) {
+	    const j = Math.floor(Math.random() * (i + 1));
+	    [array[i], array[j]] = [array[j], array[i]];
+	  }
+	}
+
+	shuffleImagesWithinList();
+
+</script>
 </head>
 <body>
 
-이중배 테스트
+<ul id="randomList">
+  <li><img src="./img/animal/1.jpg" alt="이미지 1"></li>
+  <li><img src="./img/animal/2.jpg" alt="이미지 2"></li>
+  <li><img src="./img/animal/3.jpg" alt="이미지 3"></li>
+  <li><img src="./img/animal/4.jpg" alt="이미지 4"></li>
+  <li><img src="./img/animal/5.jpg" alt="이미지 5"></li>
+</ul>
+
 </body>
 </html>
