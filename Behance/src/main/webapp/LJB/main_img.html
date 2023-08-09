@@ -9,10 +9,13 @@
 <style type="text/css">
 
 .base-image,.overlay-image{
-	position: absolute;
+
 }
 .overlay-image{
-
+	opacity: 100%;
+	margin-left: 200px;
+	margin-bottom:50px;
+	
 	z-index: 2;
 }
 .base-image{
@@ -23,33 +26,37 @@
 	height: 250px;
 	transition: all 0.5s;
 }
+li:hover,.base-image:hover{
+	transition: all 0.5s;
+}
 .base-image:hover{
 	width: 260px;
 	height: 260px;
-	transition: all 0.5s;
 }	
 li:hover{
 	width: 260px;
-	height: 310px;
-	transition: all 0.5s;
+	height: 260x;
 
 }
 ul{	
+	list-style: none;
 	border: 2px solid #888;
  	text-align: center; 
 	margin: 20px 30px auto;
 	padding: 0;
 }
-
+.base-image,li{
+	transition: all 0.5s;
+}
 li{
 	transition: all 0.5s;
 	list-style-type: none;
 	text-align: left;
- 	display: inline-block; 
+ 	display: inline-block;
 	border: 2px solid #ccc;
 	width: 250px;
-	height: 300px;
-	margin: 10px 10px auto;
+	height: 250px;
+	margin: 10px 10px 25px;
 }
 </style>
 </head>
@@ -57,91 +64,170 @@ li{
 <div class = "image-container"  >
 
 		<ul class = "imgList">
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/1.jpg" alt="1"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/2.jpg" alt="1"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/3.jpg" alt="1"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/4.jpg" alt="1"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/5.jpg" alt="1"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/6.jpg" alt="1"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/7.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/8.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/9.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/10.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/11.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/12.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/13.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/animal/14.jpg"></li>
-			<!-- -------------------------------- -->
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/1.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/2.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/3.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/4.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/5.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/6.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/7.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/8.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/9.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/10.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/11.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/12.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/13.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/illustration/14.jpg"></li>
-			<!-- --------------------------------- -->
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/1.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/2.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/3.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/4.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/5.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/6.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/7.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/8.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/9.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/10.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/11.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/12.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/13.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/14.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/15.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/16.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/17.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/18.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/19.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/20.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/21.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/22.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/23.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/24.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/25.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/26.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/27.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/28.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/29.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/30.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/31.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/32.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/33.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/34.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/35.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/36.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/kakao/37.jpg"></li>
-			<!-- ---------------------------- -->
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/1.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/2.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/3.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/4.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/5.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/6.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/7.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/8.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/9.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/10.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/11.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/12.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/13.jpg"></li>
-			<li class= "box"><img class="overlay-image" src="overlay.png" alt="오버레이 이미지"><img class="base-image"src="img/picture/14.jpg"></li>
+			<li class= "box"><img class="base-image"src="img/animal/1.jpg"alt="이미지">하마</li>
+			<li class= "box"><img class="base-image"src="img/animal/2.jpg"alt="이미지">다람쥐</li>
+			<li class= "box"><img class="base-image"src="img/animal/3.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/4.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/5.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/6.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/7.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/8.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/9.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/10.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/11.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/12.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/13.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/14.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/15.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/16.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/17.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/18.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/19.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/20.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/21.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/22.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/23.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/24.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/25.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/26.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/27.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/28.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/29.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/30.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/31.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/32.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/33.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/34.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/35.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/36.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/37.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/38.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/39.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/animal/40.jpg"alt="이미지"></li>
 			<!--  -->
+			<li class= "box"><img class="base-image"src="img/illustration/1.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/2.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/3.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/4.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/5.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/6.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/7.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/8.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/9.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/10.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/11.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/12.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/13.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/14.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/15.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/16.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/17.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/18.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/19.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/20.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/21.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/22.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/23.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/24.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/25.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/26.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/27.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/28.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/29.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/30.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/31.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/32.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/33.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/34.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/35.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/36.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/37.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/38.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/39.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/illustration/40.jpg"alt="이미지"></li>
+			<!--  -->
+			<li class= "box"><img class="base-image"src="img/kakao/1.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/2.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/3.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/4.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/5.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/6.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/7.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/8.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/9.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/10.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/11.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/12.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/13.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/14.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/15.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/16.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/17.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/18.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/19.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/20.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/21.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/22.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/23.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/24.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/25.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/26.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/27.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/28.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/29.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/30.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/31.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/32.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/33.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/34.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/35.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/36.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/37.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/38.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/39.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/kakao/40.jpg"alt="이미지"></li>
+			<!--  -->
+			<li class= "box"><img class="base-image"src="img/picture/1.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/2.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/3.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/4.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/5.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/6.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/7.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/8.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/9.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/10.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/11.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/12.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/13.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/14.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/15.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/16.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/17.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/18.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/19.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/20.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/21.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/22.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/23.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/24.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/25.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/26.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/27.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/28.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/29.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/30.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/31.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/32.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/33.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/34.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/35.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/36.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/37.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/38.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/39.jpg"alt="이미지"></li>
+			<li class= "box"><img class="base-image"src="img/picture/40.jpg"alt="이미지"></li>
 		</ul>
-			<img class="overlay-image" src="overlay.png" alt="오버레이 이미지">
 </div>
 
 
