@@ -1,6 +1,36 @@
 <html><head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    $('.event').mouseover(function() {
+    	$(this).css("border-bottom", "1px solid black")
+    	.css("display", "block")
+    	.css("padding-bottom", "21px")
+    	
+    });
+    $('.event').mouseleave(function() {
+       $(this).css("border-bottom", "");
+    });
+    
+    $('#square1').mouseenter(function() {
+       $(this).css("background", "#DEE8FF")
+    });
+    $('#square1').mouseleave(function() {
+       $(this).css("background", "#f5f8ff")
+    });
+    $('#square2').mouseenter(function() {
+       $(this).css("background", "#003ECB")
+    });
+    $('#square2').mouseleave(function() {
+       $(this).css("background", "#0057ff")
+    });
+	
+})
+
+</script>
 
 <style type="text/css">
 a{
@@ -21,6 +51,7 @@ li {
 	float: left;
 	margin-left: 8px;
 	text-align: center;
+	padding-right: 13px;
 }
 
 * {
@@ -28,21 +59,21 @@ li {
 	margin: 0;	/* 외부 여백 */
 }
 
-span {
-	padding-right: 16px;
-	
+#menu1 {
+	margin-top: 5px;
 }
 
 
+
 #menu2 {
-		float: right;
+	float: right;
 	margin-left: 8px;
 	text-align: center;
 }
 
 #square1 {
 	border: 1px solid #dee8ff;
-	width: 74px;
+	width: 65px;
     height: 23px;
 	background-color: #f5f8ff;
 	border-radius: 20px;
@@ -51,7 +82,7 @@ span {
 
 #square2 {
 	border: 1px solid #dee8ff;
-	width: 60px;
+	width: 55px;
     height: 23px;
 	background-color: #0057ff;
 	border-radius: 20px;
@@ -76,8 +107,10 @@ span {
 
 .vl {
   border-left: 0.5px solid #DBDCDD;
-  height: 20px;
+  height: 35px;
 }
+
+
 
 
 </style>
@@ -88,17 +121,19 @@ span {
 <ul>
 	<div id="menu1">
 	<li><a href=""><span><img src="Behance.png" alt="로고" width="80" height="16"></span></a></li>
-	<li><a href="https://www.behance.net/for_you/onboarding?tracking_source=nav20"><span><strong>당신을 위한</strong></span></a></li>
-	<li><a href="https://www.behance.net/galleries?tracking_source=nav20"><span><strong>탐색</strong></span></a></li>
-	<li><a href="https://www.behance.net/hire?tracking_source=nav20"><span><strong>채용</strong></span></a></li>
-	<li><a href="https://www.behance.net/assets?tracking_source=nav20"><span><strong>자산</strong></span></a></li>
-	<li><a href="https://www.behance.net/joblist?tracking_source=nav20"><span><strong>직업</strong></span></a></li>
+	<li><a href="https://www.behance.net/for_you/onboarding?tracking_source=nav20"><span class="event"><strong style="height: 5px">당신을 위한</strong></span></a></li>
+	<li><a href="https://www.behance.net/galleries?tracking_source=nav20"><span class="event"><strong>탐색</strong></span></a></li>
+	<li><a href="https://www.behance.net/hire?tracking_source=nav20"><span class="event"><strong>채용</strong></span></a></li>
+	<li><a href="https://www.behance.net/assets?tracking_source=nav20"><span class="event"><strong>자산</strong></span></a></li>
+	<li><a href="https://www.behance.net/joblist?tracking_source=nav20"><span class="event"><strong>직업</strong></span></a></li>
 	</div>
 
 	<div id="menu2">
-	<li><img src="Bell.png" alt="벨" width="50" height="38"></li>
-	<li><div id="square1" ><a href=""><strong style="color: #0057ff;">로그인</strong></a></div></li>
-	<li><div id="square2"><a href=""><strong style="color: #FFFFFF;">등록</strong></a></div></li>
+	<li><img src="Bell.png" alt="벨" width="45" height="38"></li>
+	<li><a href="https://auth.services.adobe.com/ko_KR/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2FBehanceWebSusi1%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.behance.net%252F%253Fisa0%253D1%2523old_hash%253D%2526from_ims%253Dtrue%2526client_id%253DBehanceWebSusi1%2526api%253Dauthorize%2526scope%253DAdobeID%252Copenid%252Cgnav%252Csao.cce_private%252Ccreative_cloud%252Ccreative_sdk%252Cbe.pro2.external_client%252Cadditional_info.roles%26state%3D%257B%2522ac%2522%253A%2522behance.net%2522%252C%2522csrf%2522%253A%2522b038013c-ace7-4dbb-933f-9c25ae7cd4ee%2522%252C%2522context%2522%253A%257B%2522intent%2522%253A%2522signIn%2522%257D%252C%2522jslibver%2522%253A%2522v2-v0.38.0-17-g633319d%2522%252C%2522nonce%2522%253A%25222069800947118707%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=BehanceWebSusi1&scope=AdobeID%2Copenid%2Cgnav%2Csao.cce_private%2Ccreative_cloud%2Ccreative_sdk%2Cbe.pro2.external_client%2Cadditional_info.roles&state=%7B%22ac%22%3A%22behance.net%22%2C%22csrf%22%3A%22b038013c-ace7-4dbb-933f-9c25ae7cd4ee%22%2C%22context%22%3A%7B%22intent%22%3A%22signIn%22%7D%2C%22jslibver%22%3A%22v2-v0.38.0-17-g633319d%22%2C%22nonce%22%3A%222069800947118707%22%7D&relay=d4497fc2-8ad9-4843-935d-31df9a510933&locale=ko_KR&flow_type=token&dctx_id=bhnc_22989526-955d-49e3-9a7d-f093e8f3dbf5&idp_flow_type=login&s_p=google%2Cfacebook%2Capple&response_type=token&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fwww.behance.net%2F%3Fisa0%3D1%23old_hash%3D%26from_ims%3Dtrue%26client_id%3DBehanceWebSusi1%26api%3Dauthorize%26scope%3DAdobeID%2Copenid%2Cgnav%2Csao.cce_private%2Ccreative_cloud%2Ccreative_sdk%2Cbe.pro2.external_client%2Cadditional_info.roles&use_ms_for_expiry=true#/">
+		<div id="square1" ><strong style="color: #0057ff;">로그인</strong></div></a></li>
+	<li><a href="https://auth.services.adobe.com/ko_KR/deeplink.html?deeplink=signup&callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2FBehanceWebSusi1%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.behance.net%252Fauth%252Flogin%253Fdestination%253D%252Fonboarding%2523old_hash%253D%2526from_ims%253Dtrue%2526client_id%253DBehanceWebSusi1%2526api%253Dauthorize%2526scope%253DAdobeID%252Copenid%252Cgnav%252Csao.cce_private%252Ccreative_cloud%252Ccreative_sdk%252Cbe.pro2.external_client%252Cadditional_info.roles%26state%3D%257B%2522ac%2522%253A%2522behance.net%2522%252C%2522csrf%2522%253A%2522b038013c-ace7-4dbb-933f-9c25ae7cd4ee%2522%252C%2522timestamp%2522%253A%25221692021968064%2522%252C%2522context%2522%253A%257B%2522intent%2522%253A%2522signUp%2522%257D%252C%2522jslibver%2522%253A%2522v2-v0.38.0-17-g633319d%2522%252C%2522nonce%2522%253A%25223675335640753983%2522%257D%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=BehanceWebSusi1&scope=AdobeID%2Copenid%2Cgnav%2Csao.cce_private%2Ccreative_cloud%2Ccreative_sdk%2Cbe.pro2.external_client%2Cadditional_info.roles&state=%7B%22ac%22%3A%22behance.net%22%2C%22csrf%22%3A%22b038013c-ace7-4dbb-933f-9c25ae7cd4ee%22%2C%22timestamp%22%3A%221692021968064%22%2C%22context%22%3A%7B%22intent%22%3A%22signUp%22%7D%2C%22jslibver%22%3A%22v2-v0.38.0-17-g633319d%22%2C%22nonce%22%3A%223675335640753983%22%7D&relay=d4497fc2-8ad9-4843-935d-31df9a510933&locale=ko_KR&flow_type=token&dctx_id=bhnc_22989526-955d-49e3-9a7d-f093e8f3dbf5&idp_flow_type=create_account&el=true&s_p=google%2Cfacebook%2Capple&response_type=token&code_challenge_method=plain&redirect_uri=https%3A%2F%2Fwww.behance.net%2Fauth%2Flogin%3Fdestination%3D%2Fonboarding%23old_hash%3D%26from_ims%3Dtrue%26client_id%3DBehanceWebSusi1%26api%3Dauthorize%26scope%3DAdobeID%2Copenid%2Cgnav%2Csao.cce_private%2Ccreative_cloud%2Ccreative_sdk%2Cbe.pro2.external_client%2Cadditional_info.roles&use_ms_for_expiry=true#/signup">
+		<div id="square2"><strong style="color: #FFFFFF;">등록</strong></div></a></li>
 	<li><div class="vl"></div></li>
 	<li>
 		<div id="square3">
@@ -106,7 +141,7 @@ span {
 			<strong>무료 체험판</strong>
 		</div>
 	</li>
-	<li><img src="Adobe.png" alt="Adobe" width="70" height="30"></li>
+	<li><a href="https://www.adobe.com/?promoid=RTQCN3LX"><img src="Adobe.png" alt="Adobe" width="70" height="30" style="padding-top: 3px;"></a></li>
 	
 	</div>
 </ul>
